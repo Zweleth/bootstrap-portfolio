@@ -15,6 +15,10 @@ body {
     display: flex;
 }
 
+/* Landing Page
+=================================================================================================================================================
+ */
+
 nav, div, i {
     color: gray;
 }
@@ -89,6 +93,61 @@ main>div>div {
 
 }
 
+/* Contact page
+=================================================================================================================================================
+ */
+ 
+ .sec4 {
+    justify-content: space-between;
+    padding: 0 15rem 0 15rem;
+ }
+
+ .dh {
+    display: flex;
+    padding-right: 3rem;
+    border: none;
+    border-right: 3px solid gray;
+    height: 70%;
+    align-items: center;
+ }
+
+ .icons i{
+    display: flex;
+    font-size: x-large;
+    width:1em;
+    display: flex;
+    flex-direction: row;
+    
+}
+i p {
+    color: rgba(0, 255, 255, 0);
+    font-size: medium;
+    justify-self: center;
+}
+
+.icons i:hover p {
+    color: rgba(0, 255, 255, 1);
+    transition: 0.5s;
+}
+.icons i:hover{
+    animation: BlockPop 0.6s ease-in-out;
+    color: aqua;
+    
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+
+}
+
+.icons {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -117,12 +176,12 @@ form div {
     outline: none;
 }
 .form-control:hover,.form-control:focus {
-
-    appearance: none;
+    outline: 20px red;
     background: none;
     border-color: aqua;
     
 }
+
 
 
 
@@ -169,7 +228,9 @@ form button:active {
     height: 28px;
 }
 
-
+/* Landing Page
+=================================================================================================================================================
+ */
 
 .sec1 {
     width: 100vw;
@@ -232,14 +293,18 @@ form button:active {
     0% {
         scale: 1;
     }
-    40% {
-        scale: 3;
+    80% {
+        scale: 3.8;
     }
     100% {
         scale: 4;
     }
     
 }
+
+/* Resume
+=================================================================================================================================================
+ */
 
 .sec2 {
     display: flex;
