@@ -5,14 +5,21 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 0.6s;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    color: gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 100px;
+    overflow: hidden;
 }
 
 header, main, footer {
-    min-width: 100vw;
-}
-body {
-    color: gray;
-    display: flex;
+    grid-column: 1 / -1;
 }
 
 /* Landing Page
@@ -31,8 +38,14 @@ nav, div, i {
     background-color: #222;
 }
 
+.bi-sunglasses {
+    scale: 5;
+    margin-left: 3rem;
+    align-self: center;
+}
+
 img {
-    margin-left: 2rem;
+    
     width: 5rem;
     height: 2.7rem;
     filter: invert(45%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(94%) contrast(88%);
@@ -51,8 +64,9 @@ img {
 
 .navbar-nav a:hover {
     animation: Pop 0.6s ease-in-out;
-    scale: 1.05;
+    scale: 1.10;
     color: aqua;
+    background: none;
 }
 
 @keyframes Pop {
@@ -69,6 +83,15 @@ img {
     }
 }
 
+.dropdown-menu {
+    background-color: #222;
+    z-index: 20;
+}
+
+.dropdown-item {
+    background: none;
+}
+
 main {
     width: 100vw;
     height: 100vh;
@@ -78,8 +101,8 @@ main {
 }
 
 main>div>div {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +130,7 @@ main>div>div {
     padding-right: 3rem;
     border: none;
     border-right: 3px solid gray;
-    height: 70%;
+    height: 70vh;
     align-items: center;
  }
 
@@ -166,7 +189,7 @@ form div {
     width: 90%;
 }
 
-.form-control {
+.form-control, .inp {
     border: none;
     border-bottom: 3px solid gray;
     background: none;
@@ -176,9 +199,11 @@ form div {
     outline: none;
 }
 .form-control:hover,.form-control:focus {
-    outline: 20px red;
+    outline: none;
     background: none;
     border-color: aqua;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     
 }
 
@@ -245,7 +270,7 @@ form button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.111);
+    color: rgba(128, 128, 128, 0.3);
     font-size: small;
 
 }
@@ -257,7 +282,7 @@ form button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.111);
+    color: rgba(128, 128, 128, 0.3);
     font-size: small;
 
 }
@@ -412,9 +437,9 @@ form button:active {
 }
 
 #aa, #ff, #kk, #pp, #uu {
-    border: 2px solid  rgba(128, 128, 128, 0.063);
+    border: 2px solid  rgba(128, 128, 128, 0.3);
     border-radius: 10px;
-    color :  rgba(128, 128, 128, 0.063);
+    color :  rgba(128, 128, 128, 0.3);
     display: flex;
     flex-direction: column;
 
@@ -422,8 +447,8 @@ form button:active {
 }
 
 #aa:hover, #ff:hover, #kk:hover, #pp:hover, #uu:hover {
-    border-color: rgba(0, 255, 255, 0.3);
-    color: rgba(0, 255, 255, 0.3);
+    border-color: rgba(0, 255, 255, 0.5);
+    color: rgba(0, 255, 255, 0.5);
     animation: BlockPop 0.6s ease-in-out;
     scale : 1.05;
 }
@@ -447,4 +472,67 @@ form button:active {
     }
     
 }
+
+
+.caro {
+    width: 70vw;
+    height: 92vh;
+    margin-top: 60px;
+}
+
+.c-item {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+
+.c-item .image {
+    border: 2px solid rgba(128, 128, 128, 0.8);
+    border-radius: 2px;
+    width: 20rem;
+    height: 13rem;
+    
+}
+.ci1 .img1 {
+    background-image: url(https://i.postimg.cc/19VZywTm/Flip-Card-website.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.c-item a {
+    border: 2px solid rgba(128, 128, 128, 0.306);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.306);
+}
+.links {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.links a:hover {
+    animation: Pop 0.6s ease-in-out;
+    border-color: aqua;
+    color: aqua;
+    scale: 1.10;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    max-height: 30vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#carouselExampleFade {
+    width: 80vw;
+}
+
+
 
