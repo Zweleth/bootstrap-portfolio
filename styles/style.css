@@ -720,11 +720,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
-}
-footer>div>div>div>div {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footerimg {
@@ -744,4 +741,18 @@ footer>div>div>div>div {
 .initials {
     display: flex;
     flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    gap: 0.7rem;
+    margin-right:2rem;
+}
+
+.footer-links i {
+    scale: 1.1;
+}
+
+.footer-links i:hover {
+    scale: 1.3;
 }
