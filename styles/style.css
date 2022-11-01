@@ -22,9 +22,9 @@ header, main, footer {
     grid-column: 1 / -1;
 }
 
-/* Landing Page
-=================================================================================================================================================
- */
+/* ======================================================================================================================================= */
+                                                        /* Navigation bar */
+/* ======================================================================================================================================= */
 
 nav, div, i {
     color: gray;
@@ -116,9 +116,9 @@ main>div>div {
 
 }
 
-/* Contact page
-=================================================================================================================================================
- */
+/* ======================================================================================================================================= */
+                                                        /* Contact section */
+/* ======================================================================================================================================= */
  
  .sec4 {
     justify-content: space-between;
@@ -207,10 +207,6 @@ form div {
     
 }
 
-
-
-
-
 form p {
     align-self:flex-start;
 }
@@ -253,9 +249,9 @@ form button:active {
     height: 28px;
 }
 
-/* Landing Page
-=================================================================================================================================================
- */
+/* ======================================================================================================================================= */
+                                                        /* Landing page */
+/* ======================================================================================================================================= */
 
 .sec1 {
     width: 100vw;
@@ -327,9 +323,10 @@ form button:active {
     
 }
 
-/* Resume
-=================================================================================================================================================
- */
+
+/* ======================================================================================================================================= */
+                                                        /* Education section */
+/* ======================================================================================================================================= */
 
 .sec2 {
     display: flex;
@@ -473,6 +470,10 @@ form button:active {
     
 }
 
+/* ======================================================================================================================================= */
+                                                        /* Projects section */
+/* ======================================================================================================================================= */
+
 
 .caro {
     width: 70vw;
@@ -546,7 +547,7 @@ form button:active {
 .ci3 .img3 {
     background-image: url(https://i.postimg.cc/qqryM14N/Screenshot-5.png);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -581,7 +582,10 @@ form button:active {
 #carouselExampleFade {
     width: 80vw;
 }
-/*  */
+
+/* ======================================================================================================================================= */
+                                                        /* Skills section */
+/* ======================================================================================================================================= */
 .skills-text {
     padding-right: 3rem ;
     margin-right: 3rem ;
@@ -703,7 +707,129 @@ form button:active {
     }
 }
 
-/*  */
+/* ======================================================================================================================================= */
+                                                        /* Testimonials */
+/* ======================================================================================================================================= */
+
+.test-sec {
+    gap: 2rem;
+}
+
+.card-outer {
+    width:250px;
+    height: 350px; 
+    content-visibility: auto;
+}
+
+.testimonial {
+    position: relative;
+    width:250px;
+    height: 350px;
+    border: none;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d ;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid gray;
+    border-radius: 10px; 
+    backface-visibility: hidden;
+}
+
+.testimgback {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+  
+    margin-bottom: 0.2rem;
+}
+.testimgfront {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    
+    margin-bottom: 3rem;
+}
+
+.t1 .testimgfront , .t1 .testimgback {
+    background-image: url(https://i.postimg.cc/MHdSR3DG/My-project-1-9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.t2 .testimgfront , .t2 .testimgback {
+    background-image: url(https://i.postimg.cc/jjKjYxT7/My-project-1-10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.back p {
+    margin-top: 2rem;
+}
+
+.front {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+.back {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    transform: rotateY(180deg);
+
+}
+
+.card-outer:hover > .testimonial {
+
+    transform: rotateY(180deg);
+}
+
+.card-outer:hover .front, .card-outer:hover .back {
+    border-color: aqua;
+}
+
+
+/* ======================================================================================================================================== */
+                                                        /* Footer */
+/* ======================================================================================================================================== */
+
+.aboutimg:hover {
+    animation: Unblur 0.6s ease-in-out forwards;
+}
+@keyframes Unblur {
+    0% {
+        filter: blur(10px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+@keyframes blur {
+    100% {
+        filter: blur(10px);
+    }
+}
 
 .aboutimg{
     background-image: url(https://i.postimg.cc/6QZKbWZX/My-project-1.png);
@@ -714,11 +840,12 @@ form button:active {
     height: 600px;
     padding-bottom: 5rem;
     margin-bottom: 5rem;
+    animation: blur 0.6s ease-in-out forwards;
 }
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: -10px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -731,7 +858,7 @@ footer {
     background-position: center;
     width: 200px;
     height: 80px;
-    bottom: 0;
+    bottom: -15px;
     position: fixed;
     margin-bottom: 1rem;
     scale: 1.5;
@@ -755,4 +882,155 @@ footer {
 
 .footer-links i:hover {
     scale: 1.3;
+}
+
+/* ======================================================================================================================================== */
+                                                        /* Responsiveness */
+                                                            /* Small */
+/* ======================================================================================================================================== */
+@media screen and (max-width:720px) {
+
+    /* Landing section */
+    .sec1{
+        flex-direction: column;
+    }
+
+    .right, .left , .right:hover, .left:hover {
+        width: 100vh;
+    }
+
+    .sec1 p {
+        scale: 1.5;
+        color: gray;
+        
+    }
+
+    .right:hover p, .left:hover p {
+        scale: 1.5;
+        color: gray;  
+        animation: none;
+        scale: 1.5;  
+    }
+
+    footer .text, footer .footer-links {
+        display: none;
+    }
+
+    .footerimg {
+        bottom: -35px;
+        scale: 1.1;
+    }
+
+    /* Education section */
+
+    .blocks .block {
+        display: none;
+    }
+
+    #aa, #ff, #kk, #pp, #uu {
+        width: 100%;
+        grid-column: 1 / -1;
+        
+    }
+
+    /* Contact section */
+
+    .sec4 {
+        
+        padding: 0;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: center;
+        width: 100vh;
+        margin-top: 5rem;
+        margin-left: 4rem;
+
+        
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+    }
+    .icons i {
+        width: fit-content;
+    }
+
+    .dh {
+        display: none;
+    }
+
+    /* About section */
+
+    .aboutimg {
+        display: none;
+    }
+
+    .About-heading {
+        display: flex;
+        align-items: center;
+        gap:0.5rem;
+        
+    }
+
+    .more {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .profile-pic {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 3rem;
+        background-image: url(https://i.postimg.cc/pdZgCNCv/My-project-1-6.png);
+        background-size: 9rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid gray;
+    }
+
+    .caro .img2, .caro .img3 {
+        display: none;
+    }
+    .caro .links {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    /* Skills section */
+
+    .skills-sec {
+        flex-direction: column;
+    
+    }
+
+    .skills-text {
+        border: none;
+        margin: 0;
+        margin-top: 5rem;
+        max-width: 100vw;
+        font-size: medium;
+    }
+
+    .skills-menu {
+        max-width: 100vw;
+    }
+
+
+
+
+ 
+    
+
+
+
+
+
 }

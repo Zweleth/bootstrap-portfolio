@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
     <title>My portfolio</title>
 </head>
 <body>
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Navigation bar -->
+<!-- ===================================================================================================================================== -->
    <header class="navigation position-fixed w-100"> 
         <nav class="navbar navbar-expand-lg ">
 
             
             <div class="container-fluid">
-                <!-- <img src="https://i.postimg.cc/bNbj0D7H/pngwing-com-2.png" alt=""> -->
+               
                 <i class="bi bi-sunglasses"></i>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +43,7 @@
                             <li><a class="dropdown-item" href="#about">About</a></li>
                             <li><a class="dropdown-item" href="#project">Projects</a></li>
                             <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                            <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="#testimonials">Testimonial</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -49,7 +51,13 @@
             </div>
         </nav>
     </header>
+
     <main>
+
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Landing section -->
+<!-- ===================================================================================================================================== -->
+
         <div class="page" id="home">
             <div class="sec1">
                 <section class="left">
@@ -62,6 +70,10 @@
                 
             </div>
         </div>
+
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Education section -->
+<!-- ===================================================================================================================================== -->
 
         <div class="page" id="resume">
             <div class="sec2">
@@ -113,6 +125,10 @@
             </div>
         </div>
 
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Contact section -->
+<!-- ===================================================================================================================================== -->
+
         <div class="page" id="contact">
             <div class="sec4">
                 <section class="dh">
@@ -155,20 +171,31 @@
            
         </div>
 
+<!-- ===================================================================================================================================== -->
+                                                        <!-- About section -->
+<!-- ===================================================================================================================================== -->
+
         <div class="page" id="about">
             <div class="more">
                 <section class="about-text">
-                    <h5>Hello there my name is Thandolwethu Beko </h5><p><br>I am an aspiring software engineer/developer<br>I a m currently taking steps towards that<br> as i am currently enrolled at LifeChoices Academy<br>where i am taking a web design/development course<br><br>Why software engineering you may ask, Well...<br>I spend most of my time behind a computer screen a dark computer screen<br> to be more specific. I was drawn by many things to this career<br>but what fascinated me the most besides the money of course is the idea of creating something<br>that can be really big and viewed globally by just coding on your home desktop<br> and that is exactly the plan<br> and hopefully one day i could open my own web designing company </p>
+                    <section class="About-heading">
+                        <div class="profile-pic"></div><h5> Hello there my name is Thandolwethu Beko </h5>
+                    </section>
+                    <p><br>I am an aspiring software engineer/developer<br>I a m currently taking steps towards that<br> as i am currently enrolled at LifeChoices Academy<br>where i am taking a web design/development course<br><br>Why software engineering you may ask, Well...<br>I spend most of my time behind a computer screen a dark computer screen<br> to be more specific. I was drawn by many things to this career<br>but what fascinated me the most besides the money of course is the idea of creating something<br>that can be really big and viewed globally by just coding on your home desktop<br> and that is exactly the plan<br> and hopefully one day i could open my own web designing company </p>
                 </section>
                 <section class="aboutimg">
 
                 </section>
            </div>
         </div>
+
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Projects section -->
+<!-- ===================================================================================================================================== -->
         
         <div class="page" id="project">
             <div class="caro">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade w-80 " data-bs-ride="carousel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade w-80" data-bs-ride="carousel">
                     <div class="carousel-inner h-80">
                         <div class="carousel-item active ">
                             <div class="c-item ci1 ">
@@ -226,7 +253,12 @@
                     </button>
                 </div>
             </div>
-       </div>   
+       </div> 
+       
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Skills section -->
+<!-- ===================================================================================================================================== -->
+
        <div class="page" id="skills">
             <div class="skills-sec">
                 <div class="skills-text">
@@ -256,27 +288,99 @@
                 </div>
                     
             </div>
-       </div>     
-            
-                
-    
-
-    </main>
-    <!-- <footer class="footer-info displa">
-        <div class="initials">
-            <div class="initialsimg">
-
+       </div>   
+       
+       <div class="page" id="testimonials">
+            <div class="test-sec">
+                <div class="card-outer">
+                    <div class="testimonial t1">
+                        <div class="front">
+                            <div class="testimgfront"></div>
+                            <h6>Deno Rautenbach</h6>
+                            <h6>Colleague</h6>
+                        </div>
+                        <div class="back">
+                            <div class="testimgback"></div>
+                            <h6>Deno Rautenbach</h6>
+                            <h6>Colleague</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ratione et mollitia dicta dolores? Omnis ipsum quis maxime aut eius!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer">
+                    <div class="testimonial t2">
+                        <div class="front">
+                            <div class="testimgfront"></div>
+                            <h6>Tyvon April</h6>
+                            <h6>Colleague</h6>
+                        </div>
+                        <div class="back">
+                            <div class="testimgback"></div>
+                            <h6>Tyvon April</h6>
+                            <h6>Colleague</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ratione et mollitia dicta dolores? Omnis ipsum quis maxime aut eius!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer">
+                    <div class="testimonial t3">
+                        <div class="front">
+                            <div class="testimgfront"></div>
+                            <h6>Joel Mukunya</h6>
+                            <h6>Lecturer</h6>
+                        </div>
+                        <div class="back">
+                            <div class="testimgback"></div>
+                            <h6>Joel Mukanya</h6>
+                            <h6>Lecturer</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ratione et mollitia dicta dolores? Omnis ipsum quis maxime aut eius!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer">
+                    <div class="testimonial t4">
+                        <div class="front">
+                            <div class="testimgfront"></div>
+                            <h6>Girl 1</h6>
+                            <h6>Colleague</h6>
+                        </div>
+                        <div class="back">
+                            <div class="testimgback"></div>
+                            <h6>Girl 1</h6>
+                            <h6>Colleague</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ratione et mollitia dicta dolores? Omnis ipsum quis maxime aut eius!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer">
+                    <div class="testimonial t5">
+                        <div class="front">
+                            <div class="testimgfront"></div>
+                            <h6>Girl 2</h6>
+                            <h6>Colleague</h6>
+                        </div>
+                        <div class="back">
+                            <div class="testimgback"></div>
+                            <h6>Girl 2</h6>
+                            <h6>Colleague</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ratione et mollitia dicta dolores? Omnis ipsum quis maxime aut eius!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            c
-        </div>
+       </div>
+    </main>
 
-    </footer> -->
+<!-- ===================================================================================================================================== -->
+                                                        <!-- Footer -->
+<!-- ===================================================================================================================================== -->
+  
     <footer>
         <div class="initials">
             <div class="footerimg">
                 
             </div>
-            <div class="text pb-3 ps-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text pb-3 ps-2" style="background-color: rgba(0, 0, 0, 0.2);">
                 Copyright @2022 All rights reserved| Made by <strong>Thandolwethu Beko</strong>
             </div>
         </div>
@@ -288,6 +392,7 @@
         </div>
 
     </footer>
+
 <script src="https://kit.fontawesome.com/e903bca7a7.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
 </body>
