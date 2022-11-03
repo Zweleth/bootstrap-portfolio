@@ -302,7 +302,7 @@ form button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgba(128, 128, 128, 0.3);
+    color: gray;
     font-size: small;
 
 }
@@ -315,7 +315,7 @@ form button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgba(128, 128, 128, 0.3);
+    color: gray;
     font-size: small;
 
 }
