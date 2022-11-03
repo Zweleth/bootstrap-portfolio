@@ -1166,4 +1166,12 @@ footer {
         position: relative;
         left: -2rem;
     }
+
+    .about-text p {
+        margin: 0;
+    }
+
+    .more {
+        padding-top: 2rem;
+    }
 }
