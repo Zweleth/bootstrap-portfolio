@@ -22,6 +22,14 @@ footer {
     grid-column: 1 / -1;
 }
 
+header {
+    z-index: 1;
+}
+
+main {
+    z-index: 0;
+}
+
 /* ======================================================================================================================================= */
 /* Navigation bar */
 /* ======================================================================================================================================= */
@@ -853,6 +861,10 @@ form button:active {
     border-color: aqua;
 }
 
+.ts-smallscreen {
+    display: none;
+}
+
 
 /* ======================================================================================================================================== */
 /* Footer */
@@ -1004,8 +1016,10 @@ footer {
     /* Contact section */
 
     .sec4 {
-
+        width: 100vw;
+        height: 70vh;
         padding: 0;
+        margin: 0;
     }
 
     .details {
@@ -1013,23 +1027,37 @@ footer {
         flex-direction: column;
         margin-left: 0;
         justify-content: center;
-        width: 100vh;
+        width: 100vw;
         margin-top: 5rem;
-        margin-left: 4rem;
 
 
     }
 
     .icons {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap:0.2rem;
         padding: 0;
         margin: 0;
-        width: fit-content;
+        
+    }
+
+    form {
+        width: 100%;
+        padding: 0;
+    }
+
+    form input {
+        padding: 0;
     }
 
     .icons i {
-        width: fit-content;
+        width: 50%;
+    }
+
+    .icons p {
+        margin: 0;
     }
 
     .dh {
@@ -1052,6 +1080,10 @@ footer {
     .more {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .more p {
+        font-size: small;
     }
 
     .profile-pic {
@@ -1112,6 +1144,7 @@ footer {
         border: 2px solid gray;
         border-radius: 10px;
         height: 10%;
+        font-size: small;
     }
 
     .smalltest p {
@@ -1125,15 +1158,12 @@ footer {
     .smalltest:hover p {
         display: block;
     }
+}
 
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:420px) {
+    .container-fluid i{
+        scale: 2;
+        position: relative;
+        left: -2rem;
+    }
 }
