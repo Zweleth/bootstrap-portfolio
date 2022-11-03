@@ -80,6 +80,19 @@ img {
     background: none;
 }
 
+.navbar:hover .n1 a {
+    animation: navlinkPop 1s  ease-in-out;
+}
+.navbar:hover .n2 a {
+    animation: navlinkPop 1s 0.2s  ease-in-out;
+}
+.navbar:hover .n3 a {
+    animation: navlinkPop 1s 0.4s  ease-in-out;
+}
+.navbar:hover .n4 a {
+    animation: navlinkPop 1s 0.6s ease-in-out;
+}
+
 @keyframes Pop {
     0% {
         scale: 1;
@@ -1295,12 +1308,32 @@ footer {
 /* Icons animation */
 @keyframes iconsPop {
     0%{
-        scale: 1;
+        scale: 0.8;
     }
     50%{
         scale: 1.5;
     }
     100%{
-        scale: 1;
+        scale: 0.8;
+    }
+}
+
+@keyframes navlinkPop {
+    0%{
+        transform: translateY(0);
+        color: gray;
+    }
+    25%{
+        transform: translateY(-0.5rem);
+    }
+    50%{
+        color:rgba(0, 255, 255, 0.6);
+    }
+    75%{
+        transform: translateY(0.3rem);
+    }
+    100%{
+        transform: translateY(0);
+        color: gray;
     }
 }
