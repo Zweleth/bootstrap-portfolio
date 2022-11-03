@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -18,15 +16,20 @@ body {
     overflow: hidden;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     grid-column: 1 / -1;
 }
 
 /* ======================================================================================================================================= */
-                                                        /* Navigation bar */
+/* Navigation bar */
 /* ======================================================================================================================================= */
 
-nav, div, i {
+
+nav,
+div,
+i {
     color: gray;
 }
 
@@ -45,7 +48,7 @@ nav, div, i {
 }
 
 img {
-    
+
     width: 5rem;
     height: 2.7rem;
     filter: invert(45%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(94%) contrast(88%);
@@ -57,7 +60,7 @@ img {
 
 .navbar-nav a {
     display: block;
-    
+
     color: gray;
 
 }
@@ -74,10 +77,12 @@ img {
         scale: 1;
         color: gray
     }
+
     70% {
         scale: 1.15;
         color: aqua
     }
+
     100% {
         scale: 1.10;
     }
@@ -96,7 +101,7 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;  
+    align-items: center;
     overflow: hidden;
 }
 
@@ -106,8 +111,8 @@ main>div>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: 
-        linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
         url(https://i.postimg.cc/0yTZqpHX/wallpaperflare-com-wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,31 +122,32 @@ main>div>div {
 }
 
 /* ======================================================================================================================================= */
-                                                        /* Contact section */
+/* Contact section */
 /* ======================================================================================================================================= */
- 
- .sec4 {
+
+.sec4 {
     justify-content: space-between;
     padding: 0 15rem 0 15rem;
- }
+}
 
- .dh {
+.dh {
     display: flex;
     padding-right: 3rem;
     border: none;
     border-right: 3px solid gray;
     height: 70vh;
     align-items: center;
- }
+}
 
- .icons i{
+.icons i {
     display: flex;
     font-size: x-large;
-    width:1em;
+    width: 1em;
     display: flex;
     flex-direction: row;
-    
+
 }
+
 i p {
     color: rgba(0, 255, 255, 0);
     font-size: medium;
@@ -152,10 +158,11 @@ i p {
     color: rgba(0, 255, 255, 1);
     transition: 0.5s;
 }
-.icons i:hover{
+
+.icons i:hover {
     animation: BlockPop 0.6s ease-in-out;
     color: aqua;
-    
+
 }
 
 .details {
@@ -179,8 +186,9 @@ form {
     width: 24rem;
     border-radius: 10px;
     padding: 2rem 0 2rem 0;
-    
+
 }
+
 form div {
     align-items: center;
 }
@@ -189,7 +197,8 @@ form div {
     width: 90%;
 }
 
-.form-control, .inp {
+.form-control,
+.inp {
     border: none;
     border-bottom: 3px solid gray;
     background: none;
@@ -198,21 +207,23 @@ form div {
     border-radius: 0;
     outline: none;
 }
-.form-control:hover,.form-control:focus {
+
+.form-control:hover,
+.form-control:focus {
     outline: none;
     background: none;
     border-color: aqua;
     -webkit-box-shadow: none;
     box-shadow: none;
-    
+
 }
 
 form p {
-    align-self:flex-start;
+    align-self: flex-start;
 }
 
 form button {
-    background:none;
+    background: none;
     border-radius: 5px;
     width: 50%;
     height: 30px;
@@ -231,7 +242,7 @@ form button:active {
 }
 
 form button {
-    background:none;
+    background: none;
     border-radius: 5px;
     width: 50%;
     height: 30px;
@@ -250,7 +261,7 @@ form button:active {
 }
 
 /* ======================================================================================================================================= */
-                                                        /* Landing page */
+/* Landing page */
 /* ======================================================================================================================================= */
 
 .sec1 {
@@ -270,6 +281,7 @@ form button:active {
     font-size: small;
 
 }
+
 .left {
     background-color: rgba(0, 0, 0, 0.264);
     width: 50%;
@@ -282,16 +294,17 @@ form button:active {
     font-size: small;
 
 }
-.sec1 p{
+
+.sec1 p {
     text-align: center;
-    
+
 }
 
 
-.right:hover{
+.right:hover {
     width: 90%;
     color: gray;
-    
+
 }
 
 .right:hover p {
@@ -299,10 +312,10 @@ form button:active {
     scale: 4;
 }
 
-.left:hover{
+.left:hover {
     width: 90%;
     color: gray;
-    
+
 }
 
 .left:hover p {
@@ -314,18 +327,20 @@ form button:active {
     0% {
         scale: 1;
     }
+
     80% {
         scale: 3.8;
     }
+
     100% {
         scale: 4;
     }
-    
+
 }
 
 
 /* ======================================================================================================================================= */
-                                                        /* Education section */
+/* Education section */
 /* ======================================================================================================================================= */
 
 .sec2 {
@@ -334,20 +349,20 @@ form button:active {
 }
 
 .sec2>section {
-    width:100vw;
-    
+    width: 100vw;
+
 }
 
 .blocks section {
     border: 2px solid rgba(128, 128, 128, 0.063);
     border-radius: 10px;
-    color : gray;
+    color: gray;
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
     padding: 2px;
-    
+
 }
 
 .blocks {
@@ -360,6 +375,7 @@ form button:active {
     grid-row-gap: 1em;
 
 }
+
 .a {
     grid-column: 1/4;
 
@@ -380,30 +396,39 @@ form button:active {
 .e {
     grid-column: 1/3;
 }
+
 .f {
     grid-column: 3/6;
 }
+
 .g {
     grid-column: 6/9;
 }
+
 .h {
     grid-column: 9/12;
 }
+
 .i {
     grid-column: 1/2;
 }
+
 .j {
     grid-column: 2/5;
 }
+
 .k {
     grid-column: 5/8;
 }
+
 .l {
     grid-column: 8/11;
 }
+
 .m {
     grid-column: 11/12;
 }
+
 .n {
     grid-column: 1/4;
 }
@@ -423,31 +448,42 @@ form button:active {
 .r {
     grid-column: 1/3;
 }
+
 .s {
     grid-column: 3/6;
 }
+
 .t {
     grid-column: 6/9;
 }
+
 .u {
     grid-column: 9/12;
 }
 
-#aa, #ff, #kk, #pp, #uu {
+#aa,
+#ff,
+#kk,
+#pp,
+#uu {
     border: 2px solid gray;
     border-radius: 10px;
-    color : gray;
+    color: gray;
     display: flex;
     flex-direction: column;
 
-    align-items: center;  
+    align-items: center;
 }
 
-#aa:hover, #ff:hover, #kk:hover, #pp:hover, #uu:hover {
+#aa:hover,
+#ff:hover,
+#kk:hover,
+#pp:hover,
+#uu:hover {
     border-color: rgba(0, 255, 255, 0.5);
     color: rgba(0, 255, 255, 0.5);
     animation: BlockPop 0.6s ease-in-out;
-    scale : 1.05;
+    scale: 1.05;
 }
 
 
@@ -461,17 +497,19 @@ form button:active {
     0% {
         scale: 1;
     }
+
     50% {
         scale: 1.15;
     }
+
     100% {
         scale: 1.05;
     }
-    
+
 }
 
 /* ======================================================================================================================================= */
-                                                        /* Projects section */
+/* Projects section */
 /* ======================================================================================================================================= */
 
 
@@ -487,7 +525,7 @@ form button:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:3rem;
+    gap: 3rem;
 }
 
 .c-item .image {
@@ -495,13 +533,14 @@ form button:active {
     border-radius: 2px;
     width: 20rem;
     height: 13rem;
-    
+
 }
 
 .illustrations {
     display: flex;
     gap: 2rem;
 }
+
 .ci1 .img1 {
     background-image: url(https://i.postimg.cc/19VZywTm/Flip-Card-website.png);
     background-position: center;
@@ -559,6 +598,7 @@ form button:active {
     text-decoration: none;
     color: rgba(128, 128, 128, 0.306);
 }
+
 .links {
     height: fit-content;
     display: flex;
@@ -573,7 +613,8 @@ form button:active {
     scale: 1.10;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     max-height: 30vh;
     margin-top: auto;
     margin-bottom: auto;
@@ -584,11 +625,11 @@ form button:active {
 }
 
 /* ======================================================================================================================================= */
-                                                        /* Skills section */
+/* Skills section */
 /* ======================================================================================================================================= */
 .skills-text {
-    padding-right: 3rem ;
-    margin-right: 3rem ;
+    padding-right: 3rem;
+    margin-right: 3rem;
     border-right: 2px solid gray;
     height: 50vh;
     text-align: center;
@@ -599,7 +640,7 @@ form button:active {
 }
 
 .skills-sec {
-    width: 100% ;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -670,35 +711,35 @@ form button:active {
     100% {
         width: 92%;
     }
-    
+
 }
 
 @keyframes css {
     100% {
         width: 89%;
     }
-    
+
 }
 
 @keyframes javascript {
     100% {
         width: 54%;
     }
-    
+
 }
 
 @keyframes bootstrap {
     100% {
         width: 72%;
     }
-    
+
 }
 
 @keyframes python {
     100% {
         width: 55%;
     }
-    
+
 }
 
 @keyframes coloraqua {
@@ -708,7 +749,7 @@ form button:active {
 }
 
 /* ======================================================================================================================================= */
-                                                        /* Testimonials */
+/* Testimonials */
 /* ======================================================================================================================================= */
 
 .test-sec {
@@ -716,27 +757,28 @@ form button:active {
 }
 
 .card-outer {
-    width:250px;
-    height: 350px; 
+    width: 250px;
+    height: 350px;
     content-visibility: auto;
 }
 
 .testimonial {
     position: relative;
-    width:250px;
+    width: 250px;
     height: 350px;
     border: none;
-    
+
     transition: transform 0.8s;
-    transform-style: preserve-3d ;
+    transform-style: preserve-3d;
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
     border: 2px solid gray;
-    border-radius: 10px; 
+    border-radius: 10px;
     backface-visibility: hidden;
 }
 
@@ -744,32 +786,35 @@ form button:active {
     width: 4rem;
     height: 4rem;
     border-radius: 2rem;
-  
+
     margin-bottom: 0.2rem;
 }
+
 .testimgfront {
     width: 8rem;
     height: 8rem;
     border-radius: 4rem;
-    
+
     margin-bottom: 3rem;
 }
 
-.t1 .testimgfront , .t1 .testimgback {
+.t1 .testimgfront,
+.t1 .testimgback {
     background-image: url(https://i.postimg.cc/MHdSR3DG/My-project-1-9.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 
 }
 
-.t2 .testimgfront , .t2 .testimgback {
+.t2 .testimgfront,
+.t2 .testimgback {
     background-image: url(https://i.postimg.cc/jjKjYxT7/My-project-1-10.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 
 }
 
@@ -784,7 +829,7 @@ form button:active {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    
+
 }
 
 .back {
@@ -798,23 +843,25 @@ form button:active {
 
 }
 
-.card-outer:hover > .testimonial {
+.card-outer:hover>.testimonial {
 
     transform: rotateY(180deg);
 }
 
-.card-outer:hover .front, .card-outer:hover .back {
+.card-outer:hover .front,
+.card-outer:hover .back {
     border-color: aqua;
 }
 
 
 /* ======================================================================================================================================== */
-                                                        /* Footer */
+/* Footer */
 /* ======================================================================================================================================== */
 
 .aboutimg:hover {
     animation: Unblur 0.6s ease-in-out forwards;
 }
+
 @keyframes Unblur {
     0% {
         filter: blur(10px);
@@ -831,7 +878,7 @@ form button:active {
     }
 }
 
-.aboutimg{
+.aboutimg {
     background-image: url(https://i.postimg.cc/6QZKbWZX/My-project-1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -873,7 +920,7 @@ footer {
 .footer-links {
     display: flex;
     gap: 0.7rem;
-    margin-right:2rem;
+    margin-right: 2rem;
 }
 
 .footer-links i {
@@ -885,34 +932,39 @@ footer {
 }
 
 /* ======================================================================================================================================== */
-                                                        /* Responsiveness */
-                                                            /* Small */
+/* Responsiveness */
+/* Small */
 /* ======================================================================================================================================== */
 @media screen and (max-width:720px) {
 
     /* Landing section */
-    .sec1{
+    .sec1 {
         flex-direction: column;
     }
 
-    .right, .left , .right:hover, .left:hover {
+    .right,
+    .left,
+    .right:hover,
+    .left:hover {
         width: 100vh;
     }
 
     .sec1 p {
         scale: 1.5;
         color: gray;
-        
+
     }
 
-    .right:hover p, .left:hover p {
+    .right:hover p,
+    .left:hover p {
         scale: 1.5;
-        color: gray;  
+        color: gray;
         animation: none;
-        scale: 1.5;  
+        scale: 1.5;
     }
 
-    footer .text, footer .footer-links {
+    footer .text,
+    footer .footer-links {
         display: none;
     }
 
@@ -927,16 +979,32 @@ footer {
         display: none;
     }
 
-    #aa, #ff, #kk, #pp, #uu {
+    #aa,
+    #ff,
+    #kk,
+    #pp,
+    #uu {
         width: 100%;
         grid-column: 1 / -1;
-        
+
+    }
+
+    .block p {
+        display: none;
+    }
+
+    .block:hover p{
+        display: block;
+    }
+
+    .sec2 {
+        padding: 4rem 0 4rem 0;
     }
 
     /* Contact section */
 
     .sec4 {
-        
+
         padding: 0;
     }
 
@@ -949,16 +1017,17 @@ footer {
         margin-top: 5rem;
         margin-left: 4rem;
 
-        
+
     }
 
     .icons {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 0;
         margin: 0;
         width: fit-content;
     }
+
     .icons i {
         width: fit-content;
     }
@@ -976,8 +1045,8 @@ footer {
     .About-heading {
         display: flex;
         align-items: center;
-        gap:0.5rem;
-        
+        gap: 0.5rem;
+
     }
 
     .more {
@@ -996,9 +1065,11 @@ footer {
         border: 1px solid gray;
     }
 
-    .caro .img2, .caro .img3 {
+    .caro .img2,
+    .caro .img3 {
         display: none;
     }
+
     .caro .links {
         flex-direction: column;
         width: 50%;
@@ -1008,7 +1079,7 @@ footer {
 
     .skills-sec {
         flex-direction: column;
-    
+
     }
 
     .skills-text {
@@ -1023,11 +1094,43 @@ footer {
         max-width: 100vw;
     }
 
+    /* Testimonials */
+    .test-sec {
+        display: none;
+    }
+
+    .ts-smallscreen {
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+
+    .smalltest {
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 10px;
+        height: 10%;
+    }
+
+    .smalltest p {
+        display: none;
+    }
+
+    .smalltest:hover {
+        height: 100%;
+    }
+
+    .smalltest:hover p {
+        display: block;
+    }
 
 
 
- 
-    
+
+
+
 
 
 
