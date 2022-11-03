@@ -93,7 +93,7 @@ img {
     animation: navlinkPop 1s 0.6s ease-in-out;
 }
 
-.dropdown-menu:hover a {
+.dropdown-menu:hover {
     animation: none;
 }
 
@@ -152,7 +152,7 @@ main>div>div {
 
 .sec4 {
     justify-content: space-between;
-    padding: 0 15rem 0 15rem;
+    justify-content: center;
 }
 
 .dh {
@@ -778,6 +778,16 @@ form button:active {
 /* ======================================================================================================================================= */
 
 .test-sec {
+    flex-direction: column;
+    gap:2rem;
+}
+
+.test-sec h5 {
+    font-size: xx-large;
+}
+
+.testimonials {
+    display: flex;
     gap: 2rem;
 }
 
@@ -816,9 +826,9 @@ form button:active {
 }
 
 .testimgfront {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 4rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
 
     margin-bottom: 3rem;
 }
@@ -839,12 +849,17 @@ form button:active {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+   
 
 }
 
-.back p {
-    margin-top: 2rem;
+.t3 .testimgfront,
+.t3 .testimgback {
+    background-image: url(https://i.postimg.cc/D0D46KJQ/Joel-Profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 .front {
@@ -1220,6 +1235,10 @@ footer {
 /* ======================================================================================================================================== */
 
 @media screen and (min-width:721px) and (max-width:1280px) {
+
+    .navbar:hover .nav-item a {
+        animation: none;
+    }
 
     .container-fluid i {
         scale: 4;
