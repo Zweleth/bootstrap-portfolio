@@ -265,6 +265,7 @@ main>div>div {
     border-right: 3px solid gray;
     height: 70vh;
     align-items: center;
+    margin-right: 3rem;
 }
 
 .icons i {
