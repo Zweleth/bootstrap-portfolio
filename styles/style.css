@@ -30,6 +30,109 @@ main {
     z-index: 0;
 }
 
+.loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: +2;
+    height: 100vh;
+    width: 100vw;
+    animation: loadingFade 6s ease-in-out forwards;
+}
+
+.dots {
+    width: 10rem;
+    height: 6rem;
+    z-index: +3;
+}
+
+.dot {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.aqua-dot {
+    background-color: aqua;
+    animation: preLoad2 1s linear infinite;
+    
+}
+
+.gray-dot {
+    background-color: gray;
+    animation: preLoad 1s linear infinite;
+}
+
+@keyframes loadingFade {
+    0%{
+        opacity: 100%;
+        
+    }
+    80%{
+        opacity: 100%;
+    }
+    99%{
+        scale:1;
+        z-index: 2;
+        opacity: 0;
+    }
+    100%{
+        z-index: -3;
+    }
+}
+
+@keyframes preLoad {
+    0%{
+        transform: translateX(0);
+        scale:1;
+        z-index: 1;
+    }
+    25%{
+        scale:1.6;
+        z-index: 1;
+    }
+    50%{
+        transform: translateX(-2rem);
+        scale:1;
+        z-index: 0;
+    }
+    75% {
+        scale:0.7;
+        z-index: 0;
+    }
+    100%{
+        transform: translateX(0);
+        scale:1;
+        z-index: 0;
+    }
+}
+
+@keyframes preLoad2 {
+    0%{
+        transform: translateX(0);
+        scale:1;
+        z-index: 0;
+    }
+    25%{
+        scale:0.7;
+        z-index: 0;
+    }
+    50%{
+        transform: translateX(2rem);
+        scale:1;
+        z-index: 1;
+    }
+    75% {
+        scale:1.6;
+        z-index: 1;
+    }
+    100%{
+        transform: translateX(0);
+        scale:1;
+        z-index: 1;
+    }
+}
 /* ======================================================================================================================================= */
 /* Navigation bar */
 /* ======================================================================================================================================= */
@@ -561,6 +664,13 @@ form button:active {
 
 }
 
+.carousel-inner h3 {
+    font-size: xx-large;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .illustrations {
     display: flex;
     gap: 2rem;
@@ -702,14 +812,41 @@ form button:active {
     width: 0%;
     background-color: aqua;
 }
+.skills-icon p {
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+}
 
+.skills-menu span {
+    color: transparent;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+}
+.skills-icon {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
 .skills-menu:hover i {
     animation: coloraqua 1s ease-in forwards;
 }
 
+.skills-menu:hover p {
+    animation: coloraqua 1s ease-in forwards;
+}
+
+.skills-menu:hover span {
+    animation: showPercentage 1s 0.8s ease-in forwards;
+}
+
+
 .skills-menu:hover .html {
     animation: html 2s cubic-bezier(0.1, 0.1, 0.001, 1) forwards;
 }
+
 
 .skills-menu:hover .css {
     animation: css 2s cubic-bezier(0.1, 0.1, 0.001, 1) forwards;
@@ -771,6 +908,16 @@ form button:active {
     100% {
         color: aqua;
     }
+}
+
+@keyframes showPercentage {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: gray;
+    } 
+    100% {color:aqua}   
 }
 
 /* ======================================================================================================================================= */
