@@ -55,13 +55,13 @@ main {
 
 .aqua-dot {
     background-color: aqua;
-    animation: preLoad2 1s linear infinite;
+    animation: preLoad2 1s ease-in-out infinite;
     
 }
 
 .gray-dot {
     background-color: gray;
-    animation: preLoad 1s linear infinite;
+    animation: preLoad 1s ease-in-out infinite;
 }
 
 @keyframes loadingFade {
@@ -236,6 +236,7 @@ main {
 main>div>div {
     min-width: 100vw;
     min-height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -645,7 +646,7 @@ form button:active {
 .caro {
     width: 70vw;
     height: 92vh;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .c-item {
@@ -731,6 +732,7 @@ form button:active {
     border: 2px solid rgba(128, 128, 128, 0.306);
     border-radius: 5px;
     padding: 5px;
+    text-align: center;
     text-decoration: none;
     color: rgba(128, 128, 128, 0.306);
 }
@@ -1010,6 +1012,15 @@ form button:active {
     
 }
 
+.t4 .testimgfront,
+.t4 .testimgback {
+    background-image: url(https://i.postimg.cc/fyJBpgfc/IMG-20220708-WA0014.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
 .front {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -1141,6 +1152,14 @@ footer {
 /* Small */
 /* ======================================================================================================================================== */
 @media screen and (max-width:720px) {
+    
+    main {
+        flex-direction: column;
+    }
+
+    .container-fluid i {
+        scale: 3;
+    }
 
     .navbar:hover .nav-item a {
         animation: none;
@@ -1383,6 +1402,10 @@ footer {
 /* ======================================================================================================================================== */
 
 @media screen and (min-width:721px) and (max-width:1280px) {
+
+    main {
+        flex-direction: column;
+    }
 
     .navbar:hover .nav-item a {
         animation: none;
