@@ -729,12 +729,12 @@ form button:active {
 
 
 .c-item a {
-    border: 2px solid rgba(128, 128, 128, 0.306);
+    border: 2px solid gray;
     border-radius: 5px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    color: rgba(128, 128, 128, 0.306);
+    color: gray
 }
 
 .links {
