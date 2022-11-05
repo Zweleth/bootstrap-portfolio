@@ -1067,7 +1067,7 @@ form button:active {
 
 @keyframes Unblur {
     0% {
-        filter: blur(10px);
+        filter: blur(5px);
     }
 
     100% {
@@ -1077,7 +1077,7 @@ form button:active {
 
 @keyframes blur {
     100% {
-        filter: blur(10px);
+        filter: blur(5px);
     }
 }
 
@@ -1132,6 +1132,8 @@ footer {
 
 .footer-links i:hover {
     scale: 1.3;
+    animation: none;
+    animation: iconAqua 1s ease-in-out forwards;
 }
 
 .fa-facebook-f {
@@ -1145,6 +1147,13 @@ footer {
 }
 .fa-instagram {
     animation: iconsPop 2s 0.9s ease-in-out infinite;
+}
+
+@keyframes iconAqua {
+    100% {
+        color: aqua;
+        scale : 1.5;
+    }
 }
 
 /* ======================================================================================================================================== */
