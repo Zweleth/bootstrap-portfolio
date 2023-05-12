@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.6s;
     scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -187,12 +190,21 @@ img {
     animation: navlinkPop 1s  ease-in-out;
 }
 .navbar:hover .n2 a {
-    animation: navlinkPop 1s 0.2s  ease-in-out;
+    animation: navlinkPop 1s 0.1s  ease-in-out;
 }
 .navbar:hover .n3 a {
-    animation: navlinkPop 1s 0.4s  ease-in-out;
+    animation: navlinkPop 1s 0.2s  ease-in-out;
 }
 .navbar:hover .n4 a {
+    animation: navlinkPop 1s 0.3s ease-in-out;
+}
+.navbar:hover .n5 a {
+    animation: navlinkPop 1s 0.4s ease-in-out;
+}
+.navbar:hover .n6 a {
+    animation: navlinkPop 1s 0.5s ease-in-out;
+}
+.navbar:hover .n7 a {
     animation: navlinkPop 1s 0.6s ease-in-out;
 }
 
@@ -644,18 +656,31 @@ form button:active {
 
 
 .caro {
-    width: 70vw;
+    width: 100vw;
     height: 92vh;
     padding-top: 60px;
 }
 
 .c-item {
     height: 80vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+}
+
+.carousel-inner > h3 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project {
+    display:flex;
+    width: 78vw;
+
 }
 
 .c-item .image {
@@ -666,16 +691,29 @@ form button:active {
 
 }
 
-.carousel-inner h3 {
-    font-size: xx-large;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .illustrations {
-    display: flex;
+    display: grid;
+    place-items: center;
     gap: 2rem;
+    padding-right: 4rem;
+    border: none;
+    height: 55vh;
+    border-right: 0.1rem solid grey;
+    margin-right: 4rem;
+    
+}
+
+.proj-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    justify-content: center;
+}
+
+.proj-desc p {
+    font-size: larger;
 }
 
 .ci1 .img1 {
@@ -685,47 +723,34 @@ form button:active {
     background-size: cover;
 }
 
-.ci1 .img2 {
-    background-image: url(https://i.postimg.cc/bJ4RRYzt/Screenshot-1.png);
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-}
-
 .ci2 .img1 {
-    background-image: url(https://i.postimg.cc/rsFyJHTX/hall2.png);
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-}
-
-.ci2 .img2 {
-    background-image: url(https://i.postimg.cc/pTVtbn6K/modal.png);
+    background-image: url(https://i.postimg.cc/qqwJCRrt/Calculation.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
 
 .ci3 .img1 {
-    background-image: url(https://i.postimg.cc/HnFdHhQM/Screenshot-3.png);
+    background-image: url(https://i.postimg.cc/TPKzvSNv/POS-products.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
 
-.ci3 .img2 {
-    background-image: url(https://i.postimg.cc/pLLrZgsW/Screenshot-4.png);
+.ci4 .img1 {
+    background-image: url(https://i.postimg.cc/V69L0WN2/Screenshot-2023-05-11-140455.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
 
-.ci3 .img3 {
-    background-image: url(https://i.postimg.cc/qqryM14N/Screenshot-5.png);
+.ci5 .img1 {
+    background-image: url(https://i.postimg.cc/vZx1GZwk/Animation.png);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: none;
     background-size: cover;
 }
+
 
 
 .c-item a {
@@ -742,6 +767,8 @@ form button:active {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    margin-left: auto;
+    
 }
 
 .links a:hover {
@@ -985,7 +1012,7 @@ form button:active {
 
 .t1 .testimgfront,
 .t1 .testimgback {
-    background-image: url(https://i.postimg.cc/MHdSR3DG/My-project-1-9.png);
+    background-image: url(https://i.postimg.cc/2jJwhbQY/DSC-3597.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -995,7 +1022,7 @@ form button:active {
 
 .t2 .testimgfront,
 .t2 .testimgback {
-    background-image: url(https://i.postimg.cc/jjKjYxT7/My-project-1-10.png);
+    background-image: url(https://i.postimg.cc/prpyZdt5/DSC-3541.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1014,12 +1041,23 @@ form button:active {
 
 .t4 .testimgfront,
 .t4 .testimgback {
-    background-image: url(https://i.postimg.cc/fyJBpgfc/IMG-20220708-WA0014.jpg);
+    background-image: url(https://i.postimg.cc/gc80G12W/C11-Uzukhanye-Dywili-3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
 }
+
+.t5 .testimgfront,
+.t5 .testimgback {
+    background-image: url(https://i.postimg.cc/q7JKK4gy/C11-Kelebogile-Nobomvu-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
 
 .front {
     background-color: rgba(0, 0, 0, 0.5);
@@ -1082,7 +1120,7 @@ form button:active {
 }
 
 .aboutimg {
-    background-image: url(https://i.postimg.cc/6QZKbWZX/My-project-1.png);
+    background-image: url(https://i.postimg.cc/NjQp69LZ/C11-Thandolwethu-Beko-1-1-Photo-Room-png-Photo-Room.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
